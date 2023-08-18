@@ -1,18 +1,20 @@
 /* static/css/style.css */
 
 /* Styling for the background image with transparency */
+
 .index-page {
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url("../images/sunset.jpg"); /* Path to your background image */
-  background-size: cover;
-  background-position: center;
+  background-size: auto 100%;
+  background-repeat: no-repeat;
+  background-position: right center;
   min-height: 100vh;
 }
 
 /* Styling for the navigation bar */
 .navbar {
   position: absolute;
-  top: 0;
+  top: 20px;
   left: 0;
   width: 100%;
   background-color: rgba(0, 0, 0, 0);
