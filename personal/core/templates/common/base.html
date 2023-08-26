@@ -1,0 +1,214 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- Add icon library -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="{% static 'css/style.css' %}"
+    />
+  </head>
+
+  <body class="flex flex-col min-h-screen">
+    <header
+      id="home"
+      class="flex bg-neutral-950 py-6 px-16 fixed top-0 left-0 right-0 z-40"
+    >
+      <nav class="flex items-center w-full">
+        <div class="flex-grow lg:flex lg:items-center lg:w-auto">
+          <ul
+            class="w-full justify-end flex-grow lg:flex lg:items-center lg:w-auto ml-auto"
+          >
+            <li>
+              <a
+                href="{% url 'index' %}"
+                class="px-4 py-2 mr-1 text-white font-bold hover:bg-amber-600 rounded-full"
+                >About</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="px-4 py-2 mr-1 text-white font-bold hover:bg-amber-600 rounded-full"
+                >projects
+              </a>
+            </li>
+
+            <li>
+              <a
+                href=""
+                class="px-4 py-2 mr-1 text-white font-bold hover:bg-amber-600 rounded-full"
+                >Blog</a
+              >
+            </li>
+            <li>
+              <a
+                href=""
+                class="px-4 py-2 mr-1 text-white font-bold hover:bg-amber-600 rounded-full"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+
+        <!-- search form  -->
+        <form class="flex items-center ml-4 pl-0" action="" method="get">
+          <label for="simple-search" class="sr-only">Search</label>
+          <div class="relative w-full">
+            <div
+              class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+            >
+              <svg
+                aria-hidden="true"
+                class="w-5 h-5 text-gray-500 dark:text-gray-400"
+                fill="currentColor"
+                viewBox="0 0 20 20"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+            </div>
+            <input
+              type="text"
+              id="simple-search"
+              class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-amber-500 focus:border-amber-500 block w-full pl-10 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-amber-500 dark:focus:border-amber-500"
+              name="q"
+              placeholder="Search"
+              required
+            />
+          </div>
+          <button
+            type="submit"
+            class="p-2.5 ml-2 text-sm font-medium text-white bg-amber-500 rounded-lg border border-amber-500 hover:bg-amber-600 focus:ring-4 focus:outline-none focus:ring-amber-500 dark:bg-amber-600 dark:hover:bg-amber-600 dark:focus:ring-amber-600"
+          >
+            <svg
+              class="w-5 h-5"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+              ></path>
+            </svg>
+            <span class="sr-only">Search</span>
+          </button>
+        </form>
+      </nav>
+    </header>
+    <div class="flex-grow container mx-auto">
+      {% block content %} {% endblock %}
+    </div>
+
+    <!-- footer content -->
+    <footer
+      class="bg-black text-center pl-20 text-white lg:text-left text-xs z-10"
+    >
+      <div class="mx-3 pt-5 text-center md:text-left pb-2">
+        <div class="grid-1 grid gap-1 md:grid-cols-2 lg:grid-cols-4">
+          <div>
+            <div class="bg-black text-white mt-1">
+              <span>© 2023 Copyright:</span>
+            </div>
+          </div>
+          <div>
+            <div class="flex justify-center items-center">
+              <div class="flex justify-center items-center">
+                <!-- Twitter -->
+                <button
+                  type="button"
+                  data-te-ripple-init
+                  data-te-ripple-color="light"
+                  class="hover:text-orange-400 mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+                  style="background-color: #1da1f2"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-4 w-4"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path
+                      d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z"
+                    />
+                  </svg>
+                </button>
+
+                <!-- github -->
+                <a
+                  href="https://github.com/besod?tab=repositories"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button
+                    type="button"
+                    data-te-ripple-init
+                    data-te-ripple-color="light"
+                    class="hover:text-orange-400 mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+                    style="background-color: #333"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"
+                      />
+                    </svg>
+                  </button>
+                </a>
+
+                <!-- Linkedin -->
+                <a
+                  href="https://www.linkedin.com/in/biniyam-negussie/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <button
+                    type="button"
+                    data-te-ripple-init
+                    data-te-ripple-color="light"
+                    class="hover:text-orange-400 mb-2 inline-block rounded px-6 py-2.5 text-xs font-medium uppercase leading-normal text-white shadow-md transition duration-150 ease-in-out hover:shadow-lg focus:shadow-lg focus:outline-none focus:ring-0 active:shadow-lg"
+                    style="background-color: #0077b5"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      class="h-4 w-4"
+                      fill="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        d="M4.98 3.5c0 1.381-1.11 2.5-2.48 2.5s-2.48-1.119-2.48-2.5c0-1.38 1.11-2.5 2.48-2.5s2.48 1.12 2.48 2.5zm.02 4.5h-5v16h5v-16zm7.982 0h-4.968v16h4.969v-8.399c0-4.67 6.029-5.052 6.029 0v8.399h4.988v-10.131c0-7.88-8.922-7.593-11.018-3.714v-2.155z"
+                      />
+                    </svg>
+                  </button>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
