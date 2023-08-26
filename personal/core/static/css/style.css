@@ -1,23 +1,19 @@
-/* static/css/style.css */
-
-/* Styling for the background image with transparency */
-
-.index-page {
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("../images/sunset.jpg"); /* Path to your background image */
-  background-size: auto 100%;
+/* style.css */
+.bg-image {
+  background-image: url("../images/sunset.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: right center;
+  background-attachment: fixed; /* Optional, to fix the background image */
   min-height: 100vh;
 }
-
-/* Styling for the navigation bar */
+/* Styling for the navbar */
 .navbar {
-  position: absolute;
-  top: 20px;
+  position: fixed;
+  top: 0;
   left: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0);
+  background-color: black; /* Set the background color to black */
+  color: white; /* Set the text color to white */
   padding: 1rem;
-  z-index: 1; /* Ensure the navbar is above the background image */
+  z-index: 1;
 }
