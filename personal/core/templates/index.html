@@ -1,6 +1,30 @@
-{% extends "common/base.html" %} {% block content %}
-<!-- Add content for the index page -->
-<h1>Welcome to My Website</h1>
-<p>This is the landing page content.</p>
-<!-- Add more content-->
+{% extends "common/base.html" %} {% load static %} {% block content %}
+
+<div class="container mx-auto mt-8 p-4 flex flex-col md:flex-row">
+  <!-- content on the left -->
+  <div class="md:w-1/2 flex flex-col justify-center items-center">
+    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+      Hello! I am Biniyam.
+    </h1>
+    <p class="text-sm sm:text-base md:text-lg lg:text-xl">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima quas sequi
+      aperiam eveniet autem! Et totam neque reiciendis! Consequatur officia
+      facere, consequuntur vero alias numquam nostrum placeat et corporis
+      adipisci. Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores
+      voluptates ex odio veniam in ut distinctio cupiditate unde provident
+      expedita. Laboriosam sit eos ipsa aperiam pariatur nemo commodi numquam
+      velit.
+    </p>
+  </div>
+
+  <!-- content on the right -->
+  <div class="md:w-1/2 flex flex-col justify-center items-center">
+    <img
+      class="image-opacity max-w-full max-h-96 w-auto h-auto"
+      src="{% static 'images/sunset.jpg' %}"
+      alt="sunset"
+    />
+  </div>
+</div>
+
 {% endblock %}

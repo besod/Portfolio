@@ -23,9 +23,9 @@
   <body class="flex flex-col min-h-screen">
     <header
       id="home"
-      class="flex bg-neutral-950 py-6 px-16 fixed top-0 left-0 right-0 z-40"
+      class="flex bg-gradient-to-r from-indigo-400 to-pink-600 py-6 px-16 fixed top-0 left-0 right-0 z-40"
     >
-      <nav class="flex items-center w-full">
+      <nav class="navbar flex items-center w-full">
         <div class="flex-grow lg:flex lg:items-center lg:w-auto">
           <ul
             class="w-full justify-end flex-grow lg:flex lg:items-center lg:w-auto ml-auto"
@@ -39,22 +39,23 @@
             </li>
             <li>
               <a
-                href=""
+                href="{% url 'projects' %}"
                 class="px-4 py-2 mr-1 text-white font-bold hover:bg-amber-600 rounded-full"
-                >projects
+              >
+                Projects
               </a>
             </li>
 
             <li>
               <a
-                href=""
+                href="{% url 'blog' %}"
                 class="px-4 py-2 mr-1 text-white font-bold hover:bg-amber-600 rounded-full"
                 >Blog</a
               >
             </li>
             <li>
               <a
-                href=""
+                href="{% url 'contact' %}"
                 class="px-4 py-2 mr-1 text-white font-bold hover:bg-amber-600 rounded-full"
                 >Contact</a
               >
@@ -63,7 +64,7 @@
         </div>
 
         <!-- search form  -->
-        <form class="flex items-center ml-4 pl-0" action="" method="get">
+        <!-- <form class="flex items-center ml-4 pl-0" action="" method="get">
           <label for="simple-search" class="sr-only">Search</label>
           <div class="relative w-full">
             <div
@@ -112,9 +113,10 @@
             </svg>
             <span class="sr-only">Search</span>
           </button>
-        </form>
+        </form> -->
       </nav>
     </header>
+
     <div class="flex-grow container mx-auto">
       {% block content %} {% endblock %}
     </div>
