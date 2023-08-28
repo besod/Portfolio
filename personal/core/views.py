@@ -1,13 +1,18 @@
 from django.shortcuts import render, get_object_or_404
-from .models import Post
+from .models import Post,Project
 from django.http import Http404
 
 # Create your views here.
 def index(request):
     return render(request, 'index.html',{})
 
-def projects(request):
-    return render(request, 'projects.html',{})
+def project(request):
+    projects = Project.objects.all()
+    return render(request, 'projects.html',{'projects':projects})
+
+def projects_detail(request, id, slug):
+    project = get_object_or_404(Project, id=id, slug=slug)
+    return render(request, 'projects_detail.html',{'project':project})
 
 def blog(request):
     posts = Post.published.all()
