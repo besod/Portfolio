@@ -1,15 +1,14 @@
-{% extends "common/base.html" %} {% load static %} {% block content %}
+{% extends "common/base.html" %} {% load static %} {% block title %} Blogs
+{%endblock%} {% block content %}
+
 <div id="blog" class="section custom-blog-section">
   <!-- Projects section content here -->
-  <h2 class="text-2xl font-bold mb-4">Projects</h2>
-  <p>showcase for projects</p>
-  <p>
-    Project 1: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac
-    odio sit amet quam fermentum suscipit.
-  </p>
-  <p>
-    Project 2: Nullam vehicula, erat non fringilla varius, sem nisl mattis odio,
-    a fringilla urna est vel metus.
-  </p>
+  <h1 class="text-2xl font-bold mb-4">Blogs List</h1>
+  {% for post in posts %}
+  <h2>
+    <a href="{% url 'core:blog_detail' post.id %}"> {{ post.title }} </a>
+  </h2>
+  <p class="date">Published {{ post.publish }} by {{ post.author }}</p>
+  {{ post.body|truncatewords:30|linebreaks }} {% endfor %}
 </div>
 {% endblock %}
