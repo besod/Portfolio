@@ -3,10 +3,22 @@ from .models import About, Project, Post
 # Register your models here.
 
 
-admin.site.register(About)
+@admin.register(About)
+class About(admin.ModelAdmin):
+    list_display = ['name','publish']
+    list_filter = ['status','created','publish']
+    search_fields = ['name', 'body']
+    date_hierarchy = 'publish'
+    ordering = ['status', 'publish']
+   
+
 @admin.register(Project)
 class ProjectAdmin(admin.ModelAdmin):
-    list_display=['title', 'slug','created','updated']
+    list_display=['title', 'slug','author','publish','status']
+    list_filter = ['status','created','publish','author']
+    search_fields = ['title', 'description']
+    date_hierarchy = 'publish'
+    ordering = ['status', 'publish']
     prepopulated_fields = {'slug':('title',)}
 
 @admin.register(Post)
