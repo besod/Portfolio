@@ -20,6 +20,10 @@ class About(models.Model):
     status = models.CharField(max_length=2,choices=Status.choices,default=Status.DRAFT)
     objects = models.Manager()
     published = PublishedManager()
+
+    class Meta:
+        ordering = ['name']
+        indexes = [models.Index(fields=['-publish']),]
     
     def __str__(self) :
         return self.name
