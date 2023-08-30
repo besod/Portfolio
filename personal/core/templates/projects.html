@@ -4,31 +4,33 @@
 <div class="flex flex-row">
   <!-- Projects section content here -->
   <h1 class="text-3xl font-bold mb-8 underline">Projects</h1>
-  
 </div>
 
 <!-- cards -->
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 ">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
   {% for project in projects %}
   <a href="{% url 'core:projects_detail' project.id project.slug %}">
-  <div class=" bg-slate-50 rounded-lg shadow-lg overflow-hidden">
-    {% if project.image %}
-    <div class="relative overflow-hidden" style="padding-bottom: 56.25%">
-      <div class="absolute inset-0">
-        <img class="object-cover h-full w-full" src="{{ project.image.url }}" alt="{{ project.image.url }} image" />
+    <div class="bg-slate-50 rounded-lg shadow-lg overflow-hidden">
+      {% if project.image %}
+      <div class="relative overflow-hidden" style="padding-bottom: 56.25%">
+        <div class="absolute inset-0">
+          <img
+            class="object-cover h-full w-full"
+            src="{{ project.image.url }}"
+            alt="{{ project.image.url }} image"
+          />
+        </div>
+      </div>
+      {% endif %}
+
+      <div class="p-4">
+        <h2 class="text-lg font-bold text-black">{{ project.title }}</h2>
+        <p class="text-gray-500 text-sm">
+          {{ project.description|truncatewords:30 }}
+        </p>
       </div>
     </div>
-    {% endif %}
-
-    <div class="p-4">     
-      <h2 class="text-lg font-bold text-black">
-         {{ project.title }}
-      </h2>      
-      <p class="text-gray-500 text-sm">
-         {{ project.description|truncatewords:30 }}
-      </p>     
-    </div>
-  </div>
-  {% endfor %}
-</div></a>
+    {% endfor %}
+  </a>
+</div>
 {% endblock %}
