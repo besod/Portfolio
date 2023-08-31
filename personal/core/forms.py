@@ -6,8 +6,8 @@ class ContactForm(forms.Form):
         max_length=100,
         label='Name',
         widget=forms.TextInput(attrs={
-            'class': 'form-input mt-4 block w-full py-3 px-4 rounded-md text-lg bg-white border-gray-400 focus:bg-white focus:outline-none focus:border-blue-500',
-            'placeholder': 'Name',
+            'class': "mt-1 block w-full rounded bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0",
+            'placeholder': 'John Doe',
             'style': 'border: 1px solid #ccc'
         }),
         required=True
@@ -15,18 +15,19 @@ class ContactForm(forms.Form):
     email = forms.EmailField(
         label='Email',
         widget=forms.EmailInput(attrs={
-                                'class': 'form-input mt-4 block w-full py-3 px-4 rounded-md text-lg bg-white border-gray-400 focus:bg-white focus:outline-none focus:border-blue-500',
-                                'placeholder': 'Email',
+                                'class': "mt-1 block w-full rounded bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0",
+                                'placeholder': "john@example.com",
                                 'style': 'border: 1px solid #ccc'
                                 }),
         required=True
     )
     message = forms.CharField(
         widget=forms.Textarea(attrs={
-            'class': 'form-input mt-4 block w-full py-3 px-4 rounded-md text-lg bg-white border-gray-400 focus:bg-white focus:outline-none focus:border-blue-500',
-            'placeholder': 'Message',
+            'class': "mt-1 block w-full rounded bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0",
+           
+            'placeholder':"Your message...",
             'style': 'border: 1px solid #ccc',
-            'rows': 4  # Change this value to adjust the height
+            'rows': 7  # Change this value to adjust the height
         }),
         label='Message',
         required=True

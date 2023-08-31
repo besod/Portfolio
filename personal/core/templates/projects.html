@@ -2,7 +2,6 @@
 {%endblock%} {% block content %}
 
 <div class="flex flex-row">
-  <!-- Projects section content here -->
   <h1 class="text-3xl font-bold mb-8 underline">Projects</h1>
 </div>
 
@@ -21,6 +20,17 @@
           />
         </div>
       </div>
+      {% else %}
+      <!-- Placeholder image -->
+      <div class="relative overflow-hidden" style="padding-bottom: 56.25%">
+        <div class="absolute inset-0">
+          <img
+            class="object-cover h-full w-full"
+            src="{% static 'images/placeholder.png' %}"
+            alt="Placeholder Image"
+          />
+        </div>
+      </div>
       {% endif %}
 
       <div class="p-4">
@@ -29,8 +39,8 @@
           {{ project.description|truncatewords:30 }}
         </p>
       </div>
-    </div>
-    {% endfor %}
-  </a>
+    </div></a
+  >
+  {% endfor %}
 </div>
 {% endblock %}
