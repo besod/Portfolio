@@ -1,8 +1,10 @@
 from django.shortcuts import render, get_object_or_404
 from .models import Post,Project,About,Status,Contact
 from django.http import Http404
-from .forms import ContactForm
+from .forms import ContactForm, SearchForm
 from django.core.mail import send_mail
+from django.contrib.postgres.search import SearchVector
+
 
 # Create your views here.
 def index(request):
@@ -18,8 +20,28 @@ def projects_detail(request, id, slug):
     return render(request, 'projects_detail.html',{'project':project})
 
 def blog(request):
-    posts = Post.published.all()
-    return render(request, 'blog.html',{'posts':posts})
+    # Initialize form and query variables
+    form = SearchForm()
+    query = None
+
+    # Check if there's a search query in the request
+    if 'query' in request.GET:
+        form = SearchForm(request.GET)
+        if form.is_valid():
+            query = form.cleaned_data['query']
+            # Use SearchVector to perform a search on title and body fields
+            posts = Post.published.annotate(
+                search=SearchVector('title', 'body'),
+            ).filter(search=query)
+    else:
+        # If no search query, display all published blog posts
+        posts = Post.published.all()
+
+    return render(request, 'blog.html', {
+        'posts': posts,
+        'form': form,
+        'query': query,
+    })
 
 def blog_detail(request, id):
     post = get_object_or_404(Post, id=id,status=Status.PUBLISHED)
@@ -46,4 +68,20 @@ def contact(request):
 
     return render(request, 'contact.html', {'form': form, 'sent': sent})
 
+def post_search(request):
+    form = SearchForm()
+    query = None
+    results = []
 
+    if 'query' in request.GET:
+        form = SearchForm(request.GET)
+        if form.is_valid():
+            query = form.cleaned_data['query']
+            results = Post.published.annotate(
+                search  = SearchVector('title', 'body'),
+            ).filter(search=query)
+
+    return render(request, 'search.html', 
+                      {'form':form, 
+                       'query':query,
+                       'results':results})

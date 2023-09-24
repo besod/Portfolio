@@ -32,3 +32,7 @@ class ContactForm(forms.Form):
         label='Message',
         required=True
     )
+
+class SearchForm(forms.Form):
+    query = forms.CharField()
+    

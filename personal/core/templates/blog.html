@@ -1,42 +1,51 @@
-{% extends "common/base.html" %} {% load static %} {% block title %} Blogs
-{%endblock%} {% block content %}
-
-
+{% extends "common/base.html" %}
+{% load static %}
+{% block title %} Blogs {% endblock %}
+{% block content %}
 <div class="max-w-6xl mx-auto">
-  <div class="flex flex-row">
-    <!-- Projects section content here -->
-    <h1 class="text-3xl font-bold mb-8 underline text-indigo-800">Blogs</h1>
+  <div class="flex justify-between items-center mb-8">
+    <h1 class="text-3xl font-bold underline text-indigo-800">Blogs</h1>
   </div>
 
-  <div class="grid grid-cols-1">
-    {% for post in posts %}
-    <div class="mb-4">
-      <a href="{% url 'core:blog_detail' post.id %}" class="hover:text-indigo-500">
-        <div class="flex p-4 rounded-lg shadow-lg border-b-4 border-blue-500">
-          <div class="w-1/4">
-            {% if post.image %}
-            <div class="relative overflow-hidden" style="padding-bottom: 56.25%">
-              <div class="absolute inset-0">
-                <img class="object-cover h-full w-full" src="{{ post.image.url }}" alt="{{ project.image.url }} image" />
-              </div>
-            </div>
-            {% endif %}
+  <div class="grid grid-cols-1 gap-4">
+    <div class="lg:flex">
+      <!-- Search Form -->
+      <div class="lg:w-1/4 pr-4">
+        <h2 class="text-xl  text-indigo-800">Search for Posts</h2>
+        <form method="get" class="mt-4">
+          <div class="mb-4">
+            {{ form.query.label_tag }}
+            <input type="text" name="query" class="border rounded-lg p-2 w-full" value="{{ form.query.value }}">
           </div>
-          <div class="w-3/4 pl-4">
-            <h2 class="text-lg font-bold text-indigo-800">
-              {{ post.title }}
-            </h2>
-            <p class="text-gray-600">
-              <i>Published {{ post.publish }} by {{ post.author }}</i>
-            </p>
+          <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 text-white font-bold py-2 px-4 rounded">
+            Search
+          </button>
+        </form>
+      </div>
 
-            {{ post.body|truncatewords:50|linebreaks }}
-      </a>
+      <!-- Blog Post List -->
+      <div class="lg:w-3/4">
+        {% for post in posts %}
+          <div class="mb-4 border rounded-lg overflow-hidden shadow-md hover:shadow-lg">
+            <a href="{% url 'core:blog_detail' post.id %}">
+              <div class="p-4">
+                <h2 class="text-lg font-bold text-indigo-800">
+                  {{ post.title }}
+                </h2>
+                <p class="text-gray-600">
+                  <i>Published {{ post.publish|date:"F d, Y" }} by {{ post.author }}</i>
+                </p>
+                <p class="mt-2">
+                  {{ post.body|truncatewords:50|linebreaks }}
+                </p>
+              </div>
+            </a>
+          </div>
+        {% empty %}
+          <p>No blog posts available.</p>
+        {% endfor %}
+      </div>
     </div>
-
   </div>
 </div>
-</div>
-{% endfor %}
-
 {% endblock %}
