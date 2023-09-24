@@ -1,12 +1,12 @@
 {% extends "common/base.html" %} {% load static %} {% block content %}
 
-<div class="container mx-auto mt-8 p-4 flex flex-col md:flex-row">
+<div class="container font-sanserif mx-auto mt-8 p-4 flex flex-col md:flex-row">
   <!-- content on the left -->
   <div class="md:w-1/2 flex flex-col justify-center items-center">
-    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl">
+    <h1 class="text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-indigo-800 font-bold mb-4 text-center italic">
       Hello! {{ about.name }}.
     </h1>
-    <p class="text-sm sm:text-base md:text-lg lg:text-xl">{{ about.body }}</p>
+    <p class="text-sm sm:text-base md:text-lg lg:text-xl text-gray-900 text-center">{{ about.body }}</p>
   </div>
 
   <!-- content on the right -->

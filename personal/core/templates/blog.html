@@ -1,40 +1,42 @@
 {% extends "common/base.html" %} {% load static %} {% block title %} Blogs
 {%endblock%} {% block content %}
 
-<div class="flex flex-row">
-  <!-- Projects section content here -->
-  <h1 class="text-3xl font-bold mb-8 underline">Blogs</h1>
-</div>
 
-<div class="grid grid-cols-1">
-  {% for post in posts %}
-  <div class="mb-4">
-    <div class="flex p-4 rounded-lg shadow-lg border-b-4 border-blue-500">
-      <div class="w-1/4">
-        {% if post.image %}
-        <div class="relative overflow-hidden" style="padding-bottom: 56.25%">
-          <div class="absolute inset-0">
-            <img
-              class="object-cover h-full w-full"
-              src="{{ post.image.url }}"
-              alt="{{ project.image.url }} image"
-            />
-          </div>
-        </div>
-        {% endif %}
-      </div>
-      <div class="w-3/4 pl-4">
-        <h2 class="text-lg font-bold">
-          <a href="{% url 'core:blog_detail' post.id %}"> {{ post.title }} </a>
-        </h2>
-        <p class="text-gray-600">
-          <i>Published {{ post.publish }} by {{ post.author }}</i>
-        </p>
-        {{ post.body|truncatewords:30|linebreaks }}
-      </div>
-    </div>
+<div class="max-w-6xl mx-auto">
+  <div class="flex flex-row">
+    <!-- Projects section content here -->
+    <h1 class="text-3xl font-bold mb-8 underline text-indigo-800">Blogs</h1>
   </div>
-  {% endfor %}
+
+  <div class="grid grid-cols-1">
+    {% for post in posts %}
+    <div class="mb-4">
+      <a href="{% url 'core:blog_detail' post.id %}" class="hover:text-indigo-500">
+        <div class="flex p-4 rounded-lg shadow-lg border-b-4 border-blue-500">
+          <div class="w-1/4">
+            {% if post.image %}
+            <div class="relative overflow-hidden" style="padding-bottom: 56.25%">
+              <div class="absolute inset-0">
+                <img class="object-cover h-full w-full" src="{{ post.image.url }}" alt="{{ project.image.url }} image" />
+              </div>
+            </div>
+            {% endif %}
+          </div>
+          <div class="w-3/4 pl-4">
+            <h2 class="text-lg font-bold text-indigo-800">
+              {{ post.title }}
+            </h2>
+            <p class="text-gray-600">
+              <i>Published {{ post.publish }} by {{ post.author }}</i>
+            </p>
+
+            {{ post.body|truncatewords:50|linebreaks }}
+      </a>
+    </div>
+
+  </div>
 </div>
+</div>
+{% endfor %}
 
 {% endblock %}

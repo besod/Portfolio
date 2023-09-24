@@ -15,6 +15,10 @@ class About(models.Model):
     name = models.CharField(max_length=50)    
     body = models.TextField(blank=True, null=True)
     image = models.ImageField(upload_to='image/', blank=True, null=True)
+    github = models.URLField(max_length=250,blank=True, null=True)
+    linkedin = models.URLField(max_length=250,blank=True, null=True)
+    twitter = models.URLField(max_length=250,blank=True, null=True)
+    facebook = models.URLField(max_length=250,blank=True, null=True)
     publish = models.DateTimeField(default=timezone.now)
     created = models.DateTimeField(default=timezone.now)
     status = models.CharField(max_length=2,choices=Status.choices,default=Status.DRAFT)
@@ -52,12 +56,13 @@ class Project(models.Model):
     
 
 class Post(models.Model):    
+    
     title = models.CharField(max_length=250)
     slug= models.SlugField(max_length=250)
     author = models.ForeignKey(User, on_delete=models.CASCADE, related_name='blog_posts')
     body = models.TextField()
     image = models.ImageField(upload_to="image/", blank=True, null=True)
-    links = models.TextField(max_length=250, blank=True, null=True)
+    links = models.URLField(max_length=250, blank=True, null=True)
     publish = models.DateTimeField(default=timezone.now)
     created = models.DateTimeField(auto_now_add=True)
     updated = models.DateTimeField(auto_now=True)
@@ -81,3 +86,4 @@ class Contact(models.Model):
 
     def __str__(self):
         return self.name
+    

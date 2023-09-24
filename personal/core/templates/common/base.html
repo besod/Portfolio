@@ -26,22 +26,22 @@
       id="home"
       class="flex bg-gradient-to-r from-indigo-300 to-slate-950 py-6 px-16 fixed top-0 left-0 right-0 z-40"
     >
-      <nav class="navbar flex items-center w-full">
+      <nav class="navbar flex items-center w-full  ">
         <div class="flex-grow lg:flex lg:items-center lg:w-auto">
           <ul
-            class="w-full justify-end flex-grow lg:flex lg:items-center lg:w-auto ml-auto"
+            class="w-full justify-end flex-grow lg:flex lg:items-center lg:w-auto ml-auto text-2xl font-bold text-white"
           >
             <li class="shadow-md transition duration-300 transform hover:scale-105">
               <a
                 href="{% url 'core:index' %}"
-                class="px-4 py-2 mr-1 text-white font-bold hover:bg-blue-400  rounded-lg  "
+                class="px-4 py-2 mr-1  hover:bg-blue-400  rounded-lg  "
                 >About</a
               >
             </li>
             <li class="shadow-md transition duration-300 transform hover:scale-105">
               <a
                 href="{% url 'core:project' %}"
-                class="px-4 py-2 mr-1 text-white font-bold hover:bg-blue-400 rounded-lg shadow-md transition duration-300 transform hover:scale-105"
+                class="px-4 py-2 mr-1 text-white  hover:bg-blue-400 rounded-lg shadow-md transition duration-300 transform hover:scale-105"
               >
                 Projects
               </a>
@@ -50,14 +50,14 @@
             <li class="shadow-md transition duration-300 transform hover:scale-105">
               <a
                 href="{% url 'core:blog' %}"
-                class="px-4 py-2 mr-1 text-white font-bold hover:bg-blue-400 rounded-lg shadow-md transition duration-300 transform hover:scale-105"
+                class="px-4 py-2 mr-1 text-white hover:bg-blue-400 rounded-lg shadow-md transition duration-300 transform hover:scale-105"
                 >Blog</a
               >
             </li>
             <li class="shadow-md transition duration-300 transform hover:scale-105">
               <a
                 href="{% url 'core:contact' %}"
-                class="px-4 py-2 mr-1 text-white font-bold hover:bg-blue-400 rounded-lg shadow-md transition duration-300 transform hover:scale-105"
+                class="px-4 py-2 mr-1 text-white hover:bg-blue-400 rounded-lg shadow-md transition duration-300 transform hover:scale-105"
                 >Contact</a
               >
             </li>
@@ -77,6 +77,11 @@
             
            <li class="p-4 ">                
                   <!-- Twitter -->
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
                   <button
                     type="button"
                     data-te-ripple-init
@@ -100,7 +105,7 @@
                   <!-- github --> 
                   <li class="p-4">
                   <a
-                    href="https://github.com/besod?tab=repositories"
+                    href="{{ about.github }}"
                     target="_blank"
                     rel="noopener noreferrer"
                   >
@@ -126,7 +131,7 @@
                 </li>
                   <!-- Linkedin -->
                   <li class="p-4"><a
-                    href="https://www.linkedin.com/in/biniyam-negussie/"
+                    href="{{ about.linkedin }}"
                     target="_blank"
                     rel="noopener noreferrer"
                   >

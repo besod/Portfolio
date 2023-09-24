@@ -1,0 +1,1364 @@
+[
+{
+  "model": "admin.logentry",
+  "pk": 1,
+  "fields": {
+    "action_time": "2023-08-27T18:11:48.005Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "who was Django Reinhard?",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 2,
+  "fields": {
+    "action_time": "2023-08-27T18:24:12.185Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "My name is",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 3,
+  "fields": {
+    "action_time": "2023-08-28T08:04:18.496Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "who was Django Reinhard?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 4,
+  "fields": {
+    "action_time": "2023-08-28T08:04:25.055Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "My name is",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 5,
+  "fields": {
+    "action_time": "2023-08-28T08:11:05.818Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "My name is Biniyam",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 6,
+  "fields": {
+    "action_time": "2023-08-28T18:34:50.263Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Web Development",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 7,
+  "fields": {
+    "action_time": "2023-08-28T18:35:32.959Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Sentiment Analysis",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 8,
+  "fields": {
+    "action_time": "2023-08-28T18:36:11.962Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Kebab Review",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 9,
+  "fields": {
+    "action_time": "2023-08-29T17:57:29.291Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Kebab Review",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 10,
+  "fields": {
+    "action_time": "2023-08-29T18:04:27.327Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Web Development",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 11,
+  "fields": {
+    "action_time": "2023-08-29T18:04:31.883Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Kebab Review",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 12,
+  "fields": {
+    "action_time": "2023-08-29T18:04:38.016Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Sentiment Analysis",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 13,
+  "fields": {
+    "action_time": "2023-08-29T18:04:41.994Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Web Development",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 14,
+  "fields": {
+    "action_time": "2023-08-29T20:10:41.589Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Sentiment Analysis",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 15,
+  "fields": {
+    "action_time": "2023-08-29T20:11:30.914Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Sentiment Analysis",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 16,
+  "fields": {
+    "action_time": "2023-08-29T20:11:43.550Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Web Development",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 17,
+  "fields": {
+    "action_time": "2023-08-29T20:15:26.600Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Kebab Review",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 18,
+  "fields": {
+    "action_time": "2023-08-29T21:06:44.396Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "who was Django Reinhard?",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 19,
+  "fields": {
+    "action_time": "2023-08-29T21:06:56.898Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "My name is Biniyam",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 20,
+  "fields": {
+    "action_time": "2023-08-29T21:31:59.115Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "Biniyam",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 21,
+  "fields": {
+    "action_time": "2023-08-30T18:08:10.636Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Sentiment Analysis",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 22,
+  "fields": {
+    "action_time": "2023-08-30T18:09:23.775Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Web Development",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 23,
+  "fields": {
+    "action_time": "2023-08-30T18:09:37.665Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Web Development",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 24,
+  "fields": {
+    "action_time": "2023-08-30T19:00:41.989Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Kebab Review",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Links\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 25,
+  "fields": {
+    "action_time": "2023-08-30T19:08:51.656Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "I am Biniyam",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Name\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 26,
+  "fields": {
+    "action_time": "2023-08-31T18:46:02.506Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "dfddf",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 27,
+  "fields": {
+    "action_time": "2023-08-31T18:47:37.899Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "adsfsafasfs",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 28,
+  "fields": {
+    "action_time": "2023-08-31T18:47:48.945Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "dfddf",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Status\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 29,
+  "fields": {
+    "action_time": "2023-09-24T11:36:49.431Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "I am Biniyam",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 30,
+  "fields": {
+    "action_time": "2023-09-24T11:37:18.042Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "I am Biniyam",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 31,
+  "fields": {
+    "action_time": "2023-09-24T12:09:08.033Z",
+    "user": 1,
+    "content_type": 11,
+    "object_id": "1",
+    "object_repr": "https://www.linkedin.com/in/biniyam-negussie/",
+    "action_flag": 1,
+    "change_message": "[{\"added\": {}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 32,
+  "fields": {
+    "action_time": "2023-09-24T12:27:51.875Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Kebab Review",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 33,
+  "fields": {
+    "action_time": "2023-09-24T12:39:08.437Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Kebab Review",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 34,
+  "fields": {
+    "action_time": "2023-09-24T12:49:19.963Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "I am Biniyam",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Github\", \"Linkedin\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 35,
+  "fields": {
+    "action_time": "2023-09-24T12:58:40.901Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Sentiment Analysis",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 36,
+  "fields": {
+    "action_time": "2023-09-24T13:08:55.620Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Sentiment Analysis",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\", \"Technology\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 37,
+  "fields": {
+    "action_time": "2023-09-24T13:12:34.803Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Sentiment Analysis",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\", \"Technology\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 38,
+  "fields": {
+    "action_time": "2023-09-24T13:13:02.832Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "2",
+    "object_repr": "Sentiment Analysis",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Links\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 39,
+  "fields": {
+    "action_time": "2023-09-24T13:45:51.901Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Portfolio",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Description\", \"Technology\", \"Image\", \"Links\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 40,
+  "fields": {
+    "action_time": "2023-09-24T13:47:25.151Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Portfolio",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 41,
+  "fields": {
+    "action_time": "2023-09-24T13:48:11.570Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "1",
+    "object_repr": "Personal Portfolio",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 42,
+  "fields": {
+    "action_time": "2023-09-24T13:49:03.111Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "4",
+    "object_repr": "dfddf",
+    "action_flag": 3,
+    "change_message": ""
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 43,
+  "fields": {
+    "action_time": "2023-09-24T13:51:57.191Z",
+    "user": 1,
+    "content_type": 8,
+    "object_id": "1",
+    "object_repr": "I am Biniyam",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 44,
+  "fields": {
+    "action_time": "2023-09-24T14:03:52.896Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "House Price Prediction",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Slug\", \"Description\", \"Technology\", \"Links\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 45,
+  "fields": {
+    "action_time": "2023-09-24T14:04:03.101Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "5",
+    "object_repr": "House Price Prediction",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Image\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 46,
+  "fields": {
+    "action_time": "2023-09-24T14:27:53.058Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Optimize generative AI workloads for environmental sustainability",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Slug\", \"Links\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 47,
+  "fields": {
+    "action_time": "2023-09-24T14:29:37.292Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Optimize generative AI workloads for environmental sustainability",
+    "action_flag": 2,
+    "change_message": "[]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 48,
+  "fields": {
+    "action_time": "2023-09-24T14:33:50.144Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "1",
+    "object_repr": "Optimize generative AI workloads for environmental sustainability",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 49,
+  "fields": {
+    "action_time": "2023-09-24T14:35:15.778Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Kebab Review",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 50,
+  "fields": {
+    "action_time": "2023-09-24T14:36:05.888Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Kebab Review",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 51,
+  "fields": {
+    "action_time": "2023-09-24T14:36:30.753Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Kebab Review",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 52,
+  "fields": {
+    "action_time": "2023-09-24T14:36:59.671Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Kebab Review",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 53,
+  "fields": {
+    "action_time": "2023-09-24T14:37:15.439Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Kebab Review",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 54,
+  "fields": {
+    "action_time": "2023-09-24T14:37:21.353Z",
+    "user": 1,
+    "content_type": 9,
+    "object_id": "3",
+    "object_repr": "Kebab Review",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Description\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 55,
+  "fields": {
+    "action_time": "2023-09-24T14:41:13.691Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "TikTok Introduces AI Labeling Tool For AI-Generated Content",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Title\", \"Slug\", \"Body\", \"Image\", \"Links\"]}}]"
+  }
+},
+{
+  "model": "admin.logentry",
+  "pk": 56,
+  "fields": {
+    "action_time": "2023-09-24T14:42:07.583Z",
+    "user": 1,
+    "content_type": 7,
+    "object_id": "2",
+    "object_repr": "TikTok Introduces AI Labeling Tool For AI-Generated Content",
+    "action_flag": 2,
+    "change_message": "[{\"changed\": {\"fields\": [\"Body\"]}}]"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 1,
+  "fields": {
+    "name": "Can add log entry",
+    "content_type": 1,
+    "codename": "add_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 2,
+  "fields": {
+    "name": "Can change log entry",
+    "content_type": 1,
+    "codename": "change_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 3,
+  "fields": {
+    "name": "Can delete log entry",
+    "content_type": 1,
+    "codename": "delete_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 4,
+  "fields": {
+    "name": "Can view log entry",
+    "content_type": 1,
+    "codename": "view_logentry"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 5,
+  "fields": {
+    "name": "Can add permission",
+    "content_type": 2,
+    "codename": "add_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 6,
+  "fields": {
+    "name": "Can change permission",
+    "content_type": 2,
+    "codename": "change_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 7,
+  "fields": {
+    "name": "Can delete permission",
+    "content_type": 2,
+    "codename": "delete_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 8,
+  "fields": {
+    "name": "Can view permission",
+    "content_type": 2,
+    "codename": "view_permission"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 9,
+  "fields": {
+    "name": "Can add group",
+    "content_type": 3,
+    "codename": "add_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 10,
+  "fields": {
+    "name": "Can change group",
+    "content_type": 3,
+    "codename": "change_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 11,
+  "fields": {
+    "name": "Can delete group",
+    "content_type": 3,
+    "codename": "delete_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 12,
+  "fields": {
+    "name": "Can view group",
+    "content_type": 3,
+    "codename": "view_group"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 13,
+  "fields": {
+    "name": "Can add user",
+    "content_type": 4,
+    "codename": "add_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 14,
+  "fields": {
+    "name": "Can change user",
+    "content_type": 4,
+    "codename": "change_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 15,
+  "fields": {
+    "name": "Can delete user",
+    "content_type": 4,
+    "codename": "delete_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 16,
+  "fields": {
+    "name": "Can view user",
+    "content_type": 4,
+    "codename": "view_user"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 17,
+  "fields": {
+    "name": "Can add content type",
+    "content_type": 5,
+    "codename": "add_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 18,
+  "fields": {
+    "name": "Can change content type",
+    "content_type": 5,
+    "codename": "change_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 19,
+  "fields": {
+    "name": "Can delete content type",
+    "content_type": 5,
+    "codename": "delete_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 20,
+  "fields": {
+    "name": "Can view content type",
+    "content_type": 5,
+    "codename": "view_contenttype"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 21,
+  "fields": {
+    "name": "Can add session",
+    "content_type": 6,
+    "codename": "add_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 22,
+  "fields": {
+    "name": "Can change session",
+    "content_type": 6,
+    "codename": "change_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 23,
+  "fields": {
+    "name": "Can delete session",
+    "content_type": 6,
+    "codename": "delete_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 24,
+  "fields": {
+    "name": "Can view session",
+    "content_type": 6,
+    "codename": "view_session"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 25,
+  "fields": {
+    "name": "Can add post",
+    "content_type": 7,
+    "codename": "add_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 26,
+  "fields": {
+    "name": "Can change post",
+    "content_type": 7,
+    "codename": "change_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 27,
+  "fields": {
+    "name": "Can delete post",
+    "content_type": 7,
+    "codename": "delete_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 28,
+  "fields": {
+    "name": "Can view post",
+    "content_type": 7,
+    "codename": "view_post"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 29,
+  "fields": {
+    "name": "Can add about",
+    "content_type": 8,
+    "codename": "add_about"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 30,
+  "fields": {
+    "name": "Can change about",
+    "content_type": 8,
+    "codename": "change_about"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 31,
+  "fields": {
+    "name": "Can delete about",
+    "content_type": 8,
+    "codename": "delete_about"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 32,
+  "fields": {
+    "name": "Can view about",
+    "content_type": 8,
+    "codename": "view_about"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 33,
+  "fields": {
+    "name": "Can add project",
+    "content_type": 9,
+    "codename": "add_project"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 34,
+  "fields": {
+    "name": "Can change project",
+    "content_type": 9,
+    "codename": "change_project"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 35,
+  "fields": {
+    "name": "Can delete project",
+    "content_type": 9,
+    "codename": "delete_project"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 36,
+  "fields": {
+    "name": "Can view project",
+    "content_type": 9,
+    "codename": "view_project"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 37,
+  "fields": {
+    "name": "Can add contact",
+    "content_type": 10,
+    "codename": "add_contact"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 38,
+  "fields": {
+    "name": "Can change contact",
+    "content_type": 10,
+    "codename": "change_contact"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 39,
+  "fields": {
+    "name": "Can delete contact",
+    "content_type": 10,
+    "codename": "delete_contact"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 40,
+  "fields": {
+    "name": "Can view contact",
+    "content_type": 10,
+    "codename": "view_contact"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 41,
+  "fields": {
+    "name": "Can add social media",
+    "content_type": 11,
+    "codename": "add_socialmedia"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 42,
+  "fields": {
+    "name": "Can change social media",
+    "content_type": 11,
+    "codename": "change_socialmedia"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 43,
+  "fields": {
+    "name": "Can delete social media",
+    "content_type": 11,
+    "codename": "delete_socialmedia"
+  }
+},
+{
+  "model": "auth.permission",
+  "pk": 44,
+  "fields": {
+    "name": "Can view social media",
+    "content_type": 11,
+    "codename": "view_socialmedia"
+  }
+},
+{
+  "model": "auth.user",
+  "pk": 1,
+  "fields": {
+    "password": "pbkdf2_sha256$390000$rKOw8ksbjLr0JcYx8rVs0d$VyEjT6JQMgHp1MOESWx2jwrg1BBVG8mGCqyhpfPte5A=",
+    "last_login": "2023-09-24T11:33:55.996Z",
+    "is_superuser": true,
+    "username": "admin",
+    "first_name": "",
+    "last_name": "",
+    "email": "bini2nd@yahoo.com",
+    "is_staff": true,
+    "is_active": true,
+    "date_joined": "2023-08-27T18:01:36.237Z",
+    "groups": [],
+    "user_permissions": []
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 1,
+  "fields": {
+    "app_label": "admin",
+    "model": "logentry"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 2,
+  "fields": {
+    "app_label": "auth",
+    "model": "permission"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 3,
+  "fields": {
+    "app_label": "auth",
+    "model": "group"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 4,
+  "fields": {
+    "app_label": "auth",
+    "model": "user"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 5,
+  "fields": {
+    "app_label": "contenttypes",
+    "model": "contenttype"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 6,
+  "fields": {
+    "app_label": "sessions",
+    "model": "session"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 7,
+  "fields": {
+    "app_label": "core",
+    "model": "post"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 8,
+  "fields": {
+    "app_label": "core",
+    "model": "about"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 9,
+  "fields": {
+    "app_label": "core",
+    "model": "project"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 10,
+  "fields": {
+    "app_label": "core",
+    "model": "contact"
+  }
+},
+{
+  "model": "contenttypes.contenttype",
+  "pk": 11,
+  "fields": {
+    "app_label": "core",
+    "model": "socialmedia"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "4lw9mf6ip3orm25ficibplq0f0kkhqus",
+  "fields": {
+    "session_data": ".eJxVjDsOwyAQBe9CHSGDWT4p0_sMaPlscBKBZOwqyt0jJBdJ-2bmvZnHYy_-6Hnza2JXJtjldwsYn7kOkB5Y743HVvdtDXwo_KSdLy3l1-10_w4K9jLqYPPkVCCKDoC0pjCTdDTPxiAiABKAJWWNBQmglbBGonBZySinaNnnC_SlN5M:1qaK6J:VZoMQiFvbZBOTjztq13guajvOXN5-z7Yu9l5GD5ixdY",
+    "expire_date": "2023-09-10T18:03:03.206Z"
+  }
+},
+{
+  "model": "sessions.session",
+  "pk": "szjf37qno5ku28xedxad6q0ghi9x3gp8",
+  "fields": {
+    "session_data": ".eJxVjDsOwyAQBe9CHSGDWT4p0_sMaPlscBKBZOwqyt0jJBdJ-2bmvZnHYy_-6Hnza2JXJtjldwsYn7kOkB5Y743HVvdtDXwo_KSdLy3l1-10_w4K9jLqYPPkVCCKDoC0pjCTdDTPxiAiABKAJWWNBQmglbBGonBZySinaNnnC_SlN5M:1qkNN6:ToAWJLikBph9bg_LDongUjtxxnjdd66HjABCsUXhrkc",
+    "expire_date": "2023-10-08T11:33:56.106Z"
+  }
+},
+{
+  "model": "core.about",
+  "pk": 1,
+  "fields": {
+    "name": "I am Biniyam",
+    "body": "An avid traveler, AI enthusiast, and with a master's degree in machine design. Alongside exploring the world, I'm deeply passionate about machine learning, data analysis, and maintaining a healthy lifestyle through regular exercise. My goal is to harness the power of technology and stay active to make a positive impact.",
+    "image": "",
+    "github": "https://github.com/besod",
+    "linkedin": "https://www.linkedin.com/in/biniyam-negussie/",
+    "twitter": "",
+    "facebook": "",
+    "publish": "2023-08-29T21:30:58Z",
+    "created": "2023-08-29T21:30:58Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "core.project",
+  "pk": 1,
+  "fields": {
+    "title": "Personal Portfolio",
+    "slug": "web-development",
+    "description": "This is my very first project of webdevelopment and share my journey through this little corner of the internet.\r\nI've had a love for exploration. Whether it's traveling to new places, diving into the fascinating world of AI and coding, or immersing myself in the art of crafting web experiences, I'm always seeking the next adventure, and you'll often find me tinkering with technology.  Sometimes, I put my thoughts into words. In my blog, I share my experiences, knowledge, and learnings.",
+    "technology": "Django, Python, TailwindCSS",
+    "image": "image/related-2_xaKxcuF.jpg",
+    "links": "https://github.com/besod",
+    "author": 1,
+    "created": "2023-08-28T18:34:50.247Z",
+    "updated": "2023-09-24T13:48:11.557Z",
+    "status": "PB",
+    "publish": "2023-08-29T17:55:43Z"
+  }
+},
+{
+  "model": "core.project",
+  "pk": 2,
+  "fields": {
+    "title": "Sentiment Analysis",
+    "slug": "sentiment-analysis",
+    "description": "In this project, I ventured into the realm of Natural Language Processing (NLP) and sentiment analysis. This is a Python-based application that allows users to explore the emotional tone of news articles on different topics.\r\n\r\nKey Features are DYNAMIC CONTENT SCRAPING: Users have the flexibility to select categories and search terms relevant to their interests. The application then scours the web for news articles containing these keywords. \r\nDATA STORAGE AND MANAGEMENT: SQLite is used to store and manage the scraped news articles. \r\nSENTIMENT ANALYSIS WITH NLTK: Natural Language Toolkit (NLTK) library used for sentiment analysis on the textual content of news articles. \r\nINTERACTIVE VISUALIZATION: Jupyter Notebook, Pandas, Seaborn, Matplotlib is used to create interactive visualizations that convey sentiment trends .",
+    "technology": "Python, Pandas, Jupyter Notebook, NLTK, SQLite, Matplotlib, Seaborn",
+    "image": "image/related-3.jpg",
+    "links": "https://github.com/besod",
+    "author": 1,
+    "created": "2023-08-28T18:35:32.959Z",
+    "updated": "2023-09-24T13:13:02.820Z",
+    "status": "PB",
+    "publish": "2023-08-29T17:55:43Z"
+  }
+},
+{
+  "model": "core.project",
+  "pk": 3,
+  "fields": {
+    "title": "Kebab Review",
+    "slug": "kebab-review",
+    "description": "Discovering the world of web development, I embarked on a journey to create \"Kebab Review,\" a  web platform for kebab enthusiasts. Collaborating with a fellow student, we crafted a user-friendly space where kebab aficionados could share their culinary experiences.\r\n\r\n\r\n\r\nKey Features:\r\n\r\n\r\nVisual Feast: Users could upload  mouthwatering kebab images, providing a thoughtful Reviews. The platform encouraged users to pen insightful reviews, sharing their impressions of kebab joints' menus.\r\nWe implemented a secure custom user registration system, allowing kebab lovers to create personal profiles.\r\n\r\nTech Stack:\r\nLeveraging the power of Django and the elegance of Tailwind CSS, we created life into this project, shaping it into a seamless functionality and aesthetics.",
+    "technology": "Django, Tailwindcss",
+    "image": "image/eating.jpg",
+    "links": "https://github.com/besod?tab=repositories",
+    "author": 1,
+    "created": "2023-08-28T18:36:11.949Z",
+    "updated": "2023-09-24T14:37:21.337Z",
+    "status": "PB",
+    "publish": "2023-08-29T17:55:43Z"
+  }
+},
+{
+  "model": "core.project",
+  "pk": 5,
+  "fields": {
+    "title": "House Price Prediction",
+    "slug": "house-price-prediction",
+    "description": "In this project, I delved into the world of data analysis and regression modeling for house price prediction. With a focus on data exploration and visualization, I learned valuable insights from the dataset and libraries used in the model. Leveraging powerful tools like Pandas, Sklearn and Python libraries, I learned to construct regression models that provide predictions for house prices.",
+    "technology": "Jupyter Notebook, Pandas, Sklearn",
+    "image": "image/related-3_HRRUtb7.jpg",
+    "links": "https://github.com/besod",
+    "author": 1,
+    "created": "2023-08-31T18:47:37.895Z",
+    "updated": "2023-09-24T14:04:03.100Z",
+    "status": "PB",
+    "publish": "2023-08-31T18:47:11Z"
+  }
+},
+{
+  "model": "core.post",
+  "pk": 1,
+  "fields": {
+    "title": "Optimize generative AI workloads for environmental sustainability",
+    "slug": "Optimize-generative-AI-workloads-for-environmental-sustainability",
+    "author": 1,
+    "body": "The adoption of generative AI is rapidly expanding, reaching an ever-growing number of industries and users worldwide. With the increasing complexity and scale of generative AI models, it is crucial to work towards minimizing their environmental impact. This involves a continuous effort focused on energy reduction and efficiency by achieving the maximum benefit from the resources provisioned and minimizing the total resources required.\r\n\r\nTo add to our guidance for optimizing deep learning workloads for sustainability on AWS, this post provides recommendations that are specific to generative AI workloads. In particular, we provide practical best practices for different customization scenarios, including training models from scratch, fine-tuning with additional data using full or parameter-efficient techniques, Retrieval Augmented Generation (RAG), and prompt engineering. Although this post primarily focuses on large language models (LLM), we believe most of the recommendations can be extended to other foundation models. Follow the link to read more...",
+    "image": "image/related-2.jpg",
+    "links": "https://aws.amazon.com/blogs/machine-learning/optimize-generative-ai-workloads-for-environmental-sustainability/",
+    "publish": "2023-08-27T18:08:09Z",
+    "created": "2023-08-27T18:11:44.582Z",
+    "updated": "2023-09-24T14:33:46.656Z",
+    "status": "PB"
+  }
+},
+{
+  "model": "core.post",
+  "pk": 2,
+  "fields": {
+    "title": "TikTok Introduces AI Labeling Tool For AI-Generated Content",
+    "slug": "TikTok-Introduces-AI-Labeling-Tool-For-AI-Generated-Content",
+    "author": 1,
+    "body": "In recent years, the explosion of AI-generated content has opened up new realms of creative expression. However, this surge in synthetic media has also raised concerns about transparency and understanding for viewers. This week, TikTok has taken a significant stride towards addressing this issue by launching optional AI labels that creators can apply to their videos. Additionally, they are testing automatic AI detection labels, acknowledging the need for a balanced approach to AI innovation and responsibility.\r\n\r\nWhile the rise of AI-generated content has ushered in a new era of artistic possibilities, it has also introduced complexities in discerning real from synthesized. Currently, creators have the option to label their content as AI-generated, providing viewers with essential context about the creative process. This marks an early step towards establishing a transparent environment amidst the burgeoning AI landscape.\r\n Read more following the link below...",
+    "image": "image/related-3_HRRUtb7_tSr5MXY.jpg",
+    "links": "https://www.marktechpost.com/2023/09/24/tiktok-introduces-ai-labeling-tool-for-ai-generated-content/",
+    "publish": "2023-08-27T18:23:30Z",
+    "created": "2023-08-27T18:24:08.755Z",
+    "updated": "2023-09-24T14:42:04.071Z",
+    "status": "PB"
+  }
+}
+]
