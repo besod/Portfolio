@@ -15,7 +15,7 @@ db.sqlite3
 *.sqlite3
 *.psql
 
-#fixtures
+# Ignore personal.json file
 personal.json
 
 # Environment variables

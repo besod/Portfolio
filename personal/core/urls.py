@@ -11,7 +11,7 @@ urlpatterns = [
     path('contact/',views.contact, name='contact'),
     path('blog/',views.blog, name='blog'),
     path('<int:id>/', views.blog_detail, name= 'blog_detail'),
-    path('search/', views.post_search, name='search'),
+   
     
 ]
 
