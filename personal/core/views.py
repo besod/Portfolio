@@ -4,7 +4,9 @@ from django.http import Http404
 from .forms import ContactForm, SearchForm
 from django.core.mail import send_mail
 from django.contrib.postgres.search import SearchVector
-
+from django.core.mail import send_mail
+from decouple import config
+from django.conf import settings
 
 # Create your views here.
 def index(request):
@@ -55,13 +57,23 @@ def contact(request):
         if form.is_valid():
             # Form field passed validation
             cd = form.cleaned_data
+           
+           # Send a notification email to personal email address
+            subject = cd['subject']
+            message = f'Name: {cd["name"]}\nEmail: {cd["email"]}\nSubject: {cd["subject"]}\nMessage: {cd["message"]}'
+            from_email = cd['email']
+            recipient = [config('EMAIL_HOST_USER')]  
+
+            send_mail(subject, message, from_email, recipient)
+
+            #save message in DB
             Contact.objects.create(
                 name=cd['name'],
                 email=cd['email'],
-                message=cd['message']
-            )
-
+                subject=['subject'],
+                message=cd['message'])
             sent = True
+
             return render(request, 'emailsent.html')
     else:
         form = ContactForm()  # Create an empty form for GET requests

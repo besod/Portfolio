@@ -1,4 +1,6 @@
-{% extends "common/base.html" %} {% load static %} {% block title %} Projects
+{% extends "common/base.html" %}
+{% load tags %} 
+{% load static %} {% block title %} Projects
 {%endblock%} {% block content %}
 
 <div class="flex flex-row">
@@ -36,7 +38,7 @@
       <div class="p-4">
         <h2 class="text-lg font-bold text-black text-indigo-800">{{ project.title }}</h2>
         <p class="text-gray-500 text-sm">
-          {{ project.description|truncatewords:30 }}
+          {{ project.description|markdown|truncatewords:30 }}
         </p>
       </div>
     </div></a

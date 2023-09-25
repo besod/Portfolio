@@ -21,6 +21,16 @@ class ContactForm(forms.Form):
                                 }),
         required=True
     )
+    subject = forms.CharField(
+        max_length=100,
+        label='Name',
+        widget=forms.TextInput(attrs={
+            'class': "mt-1 block w-full rounded bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0",
+            'placeholder': 'Your subject',
+            'style': 'border: 1px solid #ccc'
+        }),
+        required=True
+    )
     message = forms.CharField(
         widget=forms.Textarea(attrs={
             'class': "mt-1 block w-full rounded bg-gray-100 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0",

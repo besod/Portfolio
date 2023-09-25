@@ -25,6 +25,16 @@
         <p class="text-red-500">{{ form.email.errors }}</p>
         {% endif %}
       </div>
+      <div class="mb-4">
+        <label
+          for="id_name"
+          class="text-gray-800 text-lg font-medium  float-left"
+          >Subject:</label
+        >
+        {{ form.subject }} {% if form.subject.errors %}
+        <p class="text-red-500">{{ form.name.errors }}</p>
+        {% endif %}
+      </div>
       <div class="mb-6">
         <label
           for="id_message"

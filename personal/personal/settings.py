@@ -136,3 +136,11 @@ MEDIA_ROOT = BASE_DIR / 'media'
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = config('EMAIL_HOST')   #The SMTP server host; the default is localhost
+EMAIL_PORT = config('EMAIL_PORT') #The SMTP port
+EMAIL_HOST_USER = config('EMAIL_HOST_USER') #The username for the SMTP server
+EMAIL_HOST_PASSWORD = config('EMAIL_HOST_PASSWORD') #The password for the SMTP server
+EMAIL_USE_TLS = config('EMAIL_USE_TLS') #Whether to use a Transport Layer Security (TLS) secure connection
+# EMAIL_USE_SSL = config('EMAIL_USE_SSL') #Whether to use an implicit TLS secure connection
